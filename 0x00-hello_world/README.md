@@ -7,4 +7,4 @@ This file contains information about the 0x00 hello world project
 5.The 55-printf.c programme prints exactly with proper grammar, but the outcome is a piece of art,
 6.The 6-size.c programme prints the size of various types on the computer it is compiled and run on.
 7.the 100-intel script generates the assembly code (Intel syntax) of a C code and save it in an output file.
-8.
+8.the 101-quote.c programme prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error
