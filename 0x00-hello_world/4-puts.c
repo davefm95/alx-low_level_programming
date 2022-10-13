@@ -4,8 +4,8 @@
  *
  *Return: 0
  */
-int main(void)
+void main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
-	return (0);
+	exit(0);
 }
