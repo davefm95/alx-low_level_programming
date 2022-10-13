@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char st[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char st[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int size = sizeof(st);
 
 	fwrite(st, 1, size, stderr);
