@@ -5,3 +5,4 @@ This file contains information about the 0x00 hello world project
 3.the 3-name script compiles a C file and creates an executable named cisfun
 4.the 4-puts.c programme prints exactly "Programming is like building a multilingual puzzle, followed by a new line
 5.The 55-printf.c programme prints exactly with proper grammar, but the outcome is a piece of art,
+6.The 6-size.c programme prints the size of various types on the computer it is compiled and run on.
