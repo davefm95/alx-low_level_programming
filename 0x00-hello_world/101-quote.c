@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
  *main - prints output to stderr
@@ -10,5 +11,5 @@ int main(void)
 	int size = sizeof(st);
 
 	fwrite(st, 1, size, stderr);
-	return (1);
+	exit(1);
 }
