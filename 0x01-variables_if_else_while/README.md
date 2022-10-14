@@ -8,3 +8,4 @@ This Readme file contains solutios to the 0x01-variables_if_else_while project t
 6.The 6-print_numberz.c prints numbers 0-9 using ascii code
 7.The 7-print_tebahpla.c code prints the alphabet backwards in lowercase
 8.the 8-print_base16.c code prints the numbers of base 16
+9.The 9-print_comb.c code prints all possible combinations of 2 digit numbers
