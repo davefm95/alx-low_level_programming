@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 /**
  *main - prints the alphabets from a - z
  *
@@ -10,7 +9,7 @@ int main(void)
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 
-	while (i < strlen(alpha))
+	while (i < 26)
 	{
 		putchar(alpha[i]);
 		i++;
