@@ -19,6 +19,7 @@ int main(void)
 			putchar(ac2);
 			if ((i == 10) && (j == 10))
 			{
+				break;
 			}
 			else
 			{
@@ -29,4 +30,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }
