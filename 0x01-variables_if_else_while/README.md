@@ -6,3 +6,4 @@ This Readme file contains solutios to the 0x01-variables_if_else_while project t
 4.The 4-print_alphabt.c code Print all the letters except q and e
 5.The 5-print_numbers.c code prints the numbers 0-9
 6.The 6-print_numberz.c prints numbers 0-9 using ascii code
+7.The 7-print_tebahpla.c code prints the alphabet backwards in lowercase
