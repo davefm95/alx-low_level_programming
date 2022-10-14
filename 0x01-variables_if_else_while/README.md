@@ -10,3 +10,4 @@ This Readme file contains solutios to the 0x01-variables_if_else_while project t
 8.the 8-print_base16.c code prints the numbers of base 16
 9.The 9-print_comb.c code prints all possible combinations of 1 digit numbers
 10.The 100-print_comb3.c code prints all possibel combinations of 2 digit numbers
+11.the 101-print_comb4.c code pints combinations of 3 numbers without repetition between 0-9
