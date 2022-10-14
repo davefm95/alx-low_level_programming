@@ -15,17 +15,20 @@ int main(void)
 	{
 		for (j = 1, ac2 = 48; j < 11; j++)
 		{
-			putchar(ac1);
-			putchar(ac2);
-			if ((i == 10) && (j == 10))
+			if (ac1 != ac2)
 			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-				ac2++;
+				putchar(ac1);
+				putchar(ac2);
+				if ((i == 10) && (j == 10))
+				{
+					break;
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+					ac2++;
+				}
 			}
 		}
 	}
