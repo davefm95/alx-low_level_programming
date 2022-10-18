@@ -8,3 +8,4 @@ This file contains descriptions of the differnt tasks in the 0x02-functions_nest
 6.the 6-abs.c function computes the absolute value of an integer
 7.the 7-print_last_digit.c function prints the last digit of a number.
 8.the 8-24_hours.c function prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+9.the 9-times_table.cfunction prints the 9 times table, starting with 0.
