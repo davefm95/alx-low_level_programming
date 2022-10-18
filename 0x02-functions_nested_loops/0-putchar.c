@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+int _putchar(char c);
 /**
  *main - Prints _putchar
  *
@@ -6,6 +8,10 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	int i;
+
+	char pc[] = "_putchar\n";
+		for (i = 0; i < 9; i++)
+			_putchar(pc[i]);
 	return (0);
 }
