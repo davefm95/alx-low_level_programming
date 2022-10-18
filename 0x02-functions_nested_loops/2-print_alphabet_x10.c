@@ -4,7 +4,7 @@
  *@c: a character argument
  *Return: returns 1 if successful an -1 if not
  */
-int _putchar(char c);
+#include "main.h"
 void print_alphabet_x10(void)
 {
 	int i;
