@@ -1,11 +1,12 @@
-#include "main.h"
-/**
- *main - calls a function to print letters of the alphabet
- *
- *Return: Always 0
- */
-int main(void)
+#include "_putchar.h"
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+        char ch = 'a';
+        int i = 1;
+        for (; i < 27; i++)
+        {
+                _putchar(ch);
+                ch++;
+        }
+        _putchar('\n');
 }
