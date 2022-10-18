@@ -1,10 +1,7 @@
+#include "main.h"
 /**
  *print_alphabet_x10 - prints the alphabet 10 times
- *_putchar - writes out characters
- *@c: a character argument
- *Return: returns 1 if successful an -1 if not
  */
-#include "main.h"
 void print_alphabet_x10(void)
 {
 	int i;

@@ -1,7 +1,7 @@
+#include "main"
 /**
  *print_alphabet - prints the a-z in lowercase
  */
-int _putchar(char c);
 void print_alphabet(void)
 {
 	char ch = 'a';
