@@ -5,3 +5,4 @@ This file contains descriptions of the differnt tasks in the 0x02-functions_nest
 3.the 3-islower.c function checks for lowercase character.
 4.the 4-isalpha.c functuon checks for alphabetic character.
 5.the 5-sign.c function prints the sign of a number
+6.the 6-abs.c function computes the absolute value of an integer
