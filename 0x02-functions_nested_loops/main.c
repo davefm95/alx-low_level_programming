@@ -7,6 +7,8 @@
 int main(void)
 {
 //	print_alphabet();
-	print_alphabet_x10();
+//	print_alphabet_x10();
+	int r= _islower('b');
+	_putchar(r+'0');
 	return (0);
 }
