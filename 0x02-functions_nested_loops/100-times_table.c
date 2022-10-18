@@ -29,6 +29,6 @@ void print_times_table(int n)
 			}
 		}
 	}
-	else
+	else if (n == 0)
 		printf("0\n");
 }
