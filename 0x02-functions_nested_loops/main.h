@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "_putchar.h"
 int _putchar(char c);
 int pc(void);
 int pc(void)
