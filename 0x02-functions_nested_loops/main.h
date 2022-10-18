@@ -1,7 +1,7 @@
 #include "_putchar.c"
 int _putchar(char c);
-int putchar(void);
-int putchar(void)
+int pc(void);
+int pc(void)
 {
         int i;
         char pc[] = "_putchar\n";

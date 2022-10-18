@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-int putchar(void);
+int pc(void);
 /**
  *main - Prints _putchar
  *
@@ -8,5 +8,6 @@ int putchar(void);
  */
 int main(void)
 {
-	putchar();
+	pc();
+	return (0);
 }
