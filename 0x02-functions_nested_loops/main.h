@@ -1,5 +1,6 @@
 #include "_putchar.c"
 int _putchar(char c);
+int putchar();
 int putchar(void)
 {
         int i;
