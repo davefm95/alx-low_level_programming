@@ -11,40 +11,31 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			t = i * j;
+			k = t / 10;
+			l = t % 10;
 			if (t < 10)
-			{
 				_putchar(t + '0');
-				if (j == 9)
-					break;
-				else
-				{
-				if (t < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				}
-			}
 			else
 			{
-				k = t / 10;
-				l = t % 10;
 				_putchar(k + '0');
 				_putchar(l + '0');
-				if (j < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
 			}
 			if (j == 9)
 				_putchar('\n');
+			else
+			{
+				if (t + i < 10)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+			}
 		}
 	}
 }
