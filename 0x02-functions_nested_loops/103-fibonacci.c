@@ -17,7 +17,7 @@ int main(void)
 		if (i % 2 != 0)
 		{
 			a += b;
-			if (a % 2 == 0)
+			if ((a % 2 == 0) && (a < 4000000))
 			{
 				sum += a;
 			}
@@ -25,7 +25,7 @@ int main(void)
 		else
 		{
 			b += a;
-			if (b % 2 == 0)
+			if ((b % 2 == 0) && (b < 4000000))
 				sum += b;
 		}
 	}
