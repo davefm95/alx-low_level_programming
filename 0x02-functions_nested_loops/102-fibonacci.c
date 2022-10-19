@@ -23,7 +23,7 @@ int main(void)
 			n2 += n1;
 			printf("%li", n2);
 		}
-		if (i < 50)
+		if (i < 48)
 			printf(", ");
 		else
 			printf("\n");
