@@ -6,3 +6,5 @@ This file explains the tasks of the code files in 0x04 more functions nested loo
 4. the 4-print_most_numbers.c file prints most numbers between 0 and 9 except 2 and 4
 5.The 5-more_numbers.c file prints 10 times the numbers, from 0 to 14, followed by a new line.
 6.The 6-print_line.c draws a straight line in the terminal.
+7.The 7-print_diagonal.c file draws a diagonal line on the terminal.
+8.The 8-print_square.c fike prints a square, followed by a new line.
