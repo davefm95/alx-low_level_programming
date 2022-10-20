@@ -5,9 +5,9 @@
  */
 int main(void)
 {
-	long long int num = 612852475143;
-	long long int hpf;
-	long long int i = 2;
+	long int num = 612852475143;
+	long int hpf;
+	long int i = 2;
 
 	while (i < num)
 	{
@@ -22,7 +22,7 @@ int main(void)
 			i++;
 		}
 	}
-	printf("%lld\n", hpf);
+	printf("%ld\n", hpf);
 
 	return (0);
 }
