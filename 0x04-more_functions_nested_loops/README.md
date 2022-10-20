@@ -10,3 +10,5 @@ This file explains the tasks of the code files in 0x04 more functions nested loo
 8.The 8-print_square.c fike prints a square, followed by a new line.
 9.The 9-fizz_buzz.c file prints the numbers from 1 to 100, followed by a new line. But for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.
 10.The 10-print_triangle.c file prints a triangle, followed by a new line.
+11.the 100-prime_factors file finds the highest prime factor of a given number
+12.the 101-print_number.c  prints an integer
