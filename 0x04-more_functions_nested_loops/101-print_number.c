@@ -17,7 +17,6 @@ void print_number(int n)
 	c = (n % 1000) / 100;
 	d = (n % 100) / 10;
 	e = n % 10;
-
 	if (n < 100)
 	{
 		if (d != 0)
