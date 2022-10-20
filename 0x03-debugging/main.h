@@ -4,6 +4,6 @@
 #include <stdio.h>
 
 void positive_or_negative(int i);
-
-#endif
+void print_remaining_days(int day, int month, int year);
 int largest_number(int a, int b, int c);
+#endif
