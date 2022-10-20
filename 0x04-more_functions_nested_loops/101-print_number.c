@@ -5,16 +5,18 @@
  */
 void print_number(int n)
 {
+	int a, b, c, d, e;
+
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	int a = n / 10000;
-	int b = (n % 10000) / 1000;
-	int c = (n % 1000) / 100;
-	int d = (n % 100) / 10;
-	int e = n % 10;
+	a = n / 10000;
+	b = (n % 10000) / 1000;
+	c = (n % 1000) / 100;
+	d = (n % 100) / 10;
+	e = n % 10;
 
 	if (n < 100)
 	{
