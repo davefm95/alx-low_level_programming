@@ -10,7 +10,7 @@ void print_number(int n)
 	int i;
 	int powten;
 
-	if (n >= -2147483648 && n <= 2147483647)
+	if (n >= -2147483647 && n <= 2147483647)
 	{
 		if (n < 0)
 		{
