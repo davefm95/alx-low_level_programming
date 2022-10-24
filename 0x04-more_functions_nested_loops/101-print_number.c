@@ -11,7 +11,7 @@ void print_number(int n)
 	int i;
 	int powten;
 
-	if (n >= 1 + INT_MIN && n <= INT_MAX)
+	if (n >= INT_MIN && n <= INT_MAX)
 	{
 		if (n < 0)
 		{
