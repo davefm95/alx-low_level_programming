@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 /**
  *print_number - prints an integer
  *@n: integer argument
@@ -9,6 +8,7 @@ void print_number(int n)
 	/*initialize variable sum to find n's power of 10*/
 	int sum;
 	int i;
+	int powten;
 
 	if (n >= -2147483647 && n <= 2147483647)
 	{
@@ -20,7 +20,10 @@ void print_number(int n)
 		sum = 0;
 		for (i = n; i >= 10; i /= 10)
 			sum++;
-		for (i = pow(10, sum); i >= 10; i /= 10)
+		powten = 1;
+		for (i = sum; i > 0; i--)
+			powten *= 10;
+		for (i = powten; i >= 10; i /= 10)
 		{
 			_putchar(n / i + '0');
 			n = n % i;
