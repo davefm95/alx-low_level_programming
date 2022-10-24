@@ -7,25 +7,20 @@ void rev_string(char *s)
 	int sl;
 	int i;
 	char ch;
-	char *rev;
 	int j;
+	char *rev;
 
 	sl = 0;
 	ch = *s;
 	rev = s;
+	j = 0;
 	while (ch)
 	{
 		sl++;
 		ch = *(s + sl);
 	}
-	for (i = sl - 1, j = 0; i >= -1; i--, j++)
+	for (i = sl - 1; i >= 0; i--, j++)
 	{
-		if (i == -1)
-			*(rev + j) = '\0';
-		else
-		{
-			*(rev + j) = *(s + i);
-		}
+		*(s + j) = *(rev + i);
 	}
-	s = rev;
 }
