@@ -7,10 +7,12 @@
  */
 void *_strcpy(char *dest, char *src)
 {
-	while ((*dest = *src))
+	while (*src)
 	{
-		dest++;
+		*dest = *src;
 		src++;
+		dest++;
 	}
+	*dest = '\0';
 	return (dest);
 }
