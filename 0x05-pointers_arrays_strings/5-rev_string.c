@@ -7,20 +7,18 @@ void rev_string(char *s)
 	int sl;
 	int i;
 	char ch;
-	int j;
 	char *rev;
 
 	sl = 0;
 	ch = *s;
 	rev = s;
-	j = 0;
 	while (ch)
 	{
 		sl++;
 		ch = *(s + sl);
 	}
-	for (i = sl - 1; i >= 0; i--, j++)
+	for (i = sl - 1; i >= 0; i--, s++)
 	{
-		(s + j) = (rev + i);
+		s = (rev + i);
 	}
 }
