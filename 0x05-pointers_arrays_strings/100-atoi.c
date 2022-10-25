@@ -5,46 +5,17 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int sl;
-	char ch;
-	int numc;
-	int pn;
-	int charno;
-	int no;
-	int compno;
-	int tenp;
-	int nr;
+	int sign = 1;
+	unsigned int num = 0;
 
-	sl = 0;
-	compno = 0;
-	tenp = 1;
-	while (*(s + sl))
-		sl++;
-	for (i = 0; i < sl - 1; i++)
-	{
-		ch = *(s + i);
-		if (ch == '-')
-			pn++;
-		if (ch >= '0' && ch <= '9')
-		{
-			numc++;
-			continue;
-		}
-		if (numc > 0)
-		{
-			for (; numc > 1; numc++)
-				tenp *= 10;
-			for (; numc > 0; numc--, tenp /= 10)
-			{
-				nr = i - numc;
-				charno = *(s + nr) - '0';
-				no = charno * tenp;
-				compno += no;
-			}
-			if (pn % 2 != 0)
-				compno = -compno;
-		}
-	}
-	return (compno);
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
+
+	return (num * sign);
 }
