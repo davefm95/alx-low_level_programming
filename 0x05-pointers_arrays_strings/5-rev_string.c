@@ -24,7 +24,7 @@ void rev_string(char *s)
 	{
 		cho = *(rev + j);
 		*(rev + j) = *(s + k);
-		*(s + k) = cho;;
+		*(s + k) = cho;
 	}
 
 }
