@@ -14,6 +14,7 @@ int _atoi(char *s)
 	int no;
 	int compno;
 	int tenp;
+	int nr;
 
 	sl = 0;
 	compno = 0;
@@ -36,7 +37,8 @@ int _atoi(char *s)
 				tenp *= 10;
 			for (; numc > 0; numc--, tenp /= 10)
 			{
-				charno = *(s + (i - numc)) - '0';
+				nr = i - numc;
+				charno = *(s + nr) - '0';
 				no = charno * tenp;
 				compno += no;
 			}
