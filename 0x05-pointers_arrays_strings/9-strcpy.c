@@ -5,7 +5,7 @@
  *@src: source of srring
  *Return: returns pointer to dest
  */
-void *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	while (*src)
 	{
