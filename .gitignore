@@ -2,3 +2,4 @@
 t.c
 a.out
 *.gch
+*.o
