@@ -3,3 +3,4 @@ t.c
 a.out
 *.gch
 *.o
+test.c
