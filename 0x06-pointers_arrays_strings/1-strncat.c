@@ -10,7 +10,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i, dstl = 0, nwstl;
 	char *cstp, *dest2;
-	static char *nwst;
 
 	cstp = (char *)malloc(n * sizeof(char));
 	for (i = 0; i < n; i++)
@@ -22,15 +21,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest2++;
 	}
 	nwstl = n + dstl + 1;
-	nwst = malloc(nwstl * sizeof(char));
-	for (i = 0; i < nwstl - 1; i++)
-	{
-		if (i < dstl)
-			nwst[i] = dest[i];
-		else
-			nwst[i] = cstp[i - dstl];
-	}
-	nwst[i] = '\0';
-	dest = nwst;
+	for (i = 0; dstl < nwstl; i++, dstl++)
+		dest[dstl] = cstp[i];
 	return (dest);
 }
