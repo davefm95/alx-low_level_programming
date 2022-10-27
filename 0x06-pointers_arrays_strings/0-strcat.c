@@ -9,7 +9,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int stlen1, i, stlen2, nwstlen, j;
+	int stlen1, i, stlen2, nwstlen;
 	char *ptr;
 
 	stlen1 = 0;
