@@ -1,5 +1,5 @@
 /**
- *_strncpy - copies a specified number of characters from one pointer to another
+ *_strncpy - copies a specified number of character from one pointer to another
  *@dest: pointer to be copied to
  *@src: pointer to be copied from
  *@n: number of characters to copy
@@ -7,13 +7,13 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, src = 0, destl = 0;
+	int i, srcl = 0, destl = 0;
 
 	while (src[srcl])
 		srcl++;
-	while (dest[destl]
+	while (dest[destl])
 	       destl++;
-	if(n > srcl)
+	if (n > srcl)
 	{
 		for (i = 0; i < destl; i++)
 		{
