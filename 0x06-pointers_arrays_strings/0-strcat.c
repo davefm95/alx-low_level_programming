@@ -20,7 +20,6 @@ char *_strcat(char *dest, char *src)
 		dest++;
 	}
 	dest = dest - stlen1;
-	printf("dest is %s", dest);
 	while (*src)
 	{
 		stlen2++;
@@ -29,17 +28,13 @@ char *_strcat(char *dest, char *src)
 	src = src - stlen2;
 	nwstlen = (stlen1 + stlen2) + 1;
 	ptr = malloc(nwstlen * sizeof(*ptr));
-	for (i = 0; i < nwstlen - 1; i++)
+	for (i = 0; i < nwstlen; i++)
 	{
 		if (i < stlen1)
 			ptr[i] = dest[i];
+		else
+			ptr[i] = src[i - stlen1];
 	}
-	for (j = stlen1, i = 0; j < nwstlen - 1; j++, i++)
-	{
-		if (src[i])
-			ptr[j] = src[i];
-	}
-	ptr[i] = '\0';
 	for (; stlen1 < nwstlen; stlen1++)
 		dest[stlen1] = ptr[stlen1];
 	return (dest);
