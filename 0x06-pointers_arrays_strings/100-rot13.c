@@ -6,18 +6,18 @@
 char *rot13(char *s)
 {
 	int i;
+	char a;
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((s[i] >= 65 && s[i] <= 77) || (s[i] >= 97 && s[i] <= 109))
-			s[i] = s[i] + 13;
-		else
-			for (; (s[i] >= 65 && s[i] > 77) || (s[i] >= 97 && s[i] > 109);)
-			{
-				s[i] = s[i] - 13;
-				break;
-			}
-
+		for (a = s[i]; (a > 64 && a < 91) || (a > 96 && a < 123);)
+		{
+			a = a - 13;
+			s[i] = a;
+			if ((s[i] < 97 && s[i] >= 84)  || s[i] < 65)
+				s[i] = a + 26;
+			break;
+		}
 	}
 	return (s);
 }
