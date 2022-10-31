@@ -13,8 +13,8 @@ void print_diagsums(int *a, int size)
 	{
 		if (i % (size + 1) == 0)
 			sumlr += a[i];
-		if (i % (size - 1) == 0)
+		if (i % (size - 1) == 0 && i < square_size - 1 && i > 0)
 			sumrl += a[i];
 	}
-	printf("%d, %d", sumlr, sumrl);
+	printf("%d, %d\n", sumlr, sumrl);
 }
