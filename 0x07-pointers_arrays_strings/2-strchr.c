@@ -9,12 +9,17 @@
 char *_strchr(char *s, char c)
 {
 	char *sc = s;
+	int slen = 0;
 
-	while (*sc)
+	while (sc[slen])
+		slen++;
+	slen++;
+	while (slen)
 	{
 		if (*sc == c)
 			return (sc);
 		sc++;
+		slen--;
 	}
 	return (NULL);
 }
