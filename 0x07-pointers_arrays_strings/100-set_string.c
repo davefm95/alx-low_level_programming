@@ -1,5 +1,5 @@
 /**
- *se_string - set tge value of a a pointer to a char
+ *set_string - set tge value of a a pointer to a char
  *@s: pomter to string pointer
  *@to: string to set pointer to
  */
