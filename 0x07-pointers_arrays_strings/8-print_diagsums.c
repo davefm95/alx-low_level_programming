@@ -4,7 +4,7 @@
  *@a: matrix array
  *@size: size of array
  */
-void print_diagsums(int *a, int size)
+void print_diagsums(int *a[], int size)
 {
 	int i, j, sumlr = 0, sumrl = 0, lstArrEle = size - 1;
 
