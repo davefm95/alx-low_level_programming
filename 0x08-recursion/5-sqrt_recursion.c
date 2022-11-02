@@ -1,11 +1,8 @@
 /**
- *_sqrt_recursion - fonda the square root of an int
  *sr - function that actually does the recursion
- *@n: number whose squareroot is to be found
  *@no: number varibale in subfunc
  *@oddno: oddno variable
  *@sq: variable int
- *Return: return squareroot of n
  *Return: sq
  */
 int sr(int no, int oddno, int sq)
@@ -19,6 +16,12 @@ int sr(int no, int oddno, int sq)
 	oddno += 2;
 	return (sr(no, oddno, sq));
 }
+
+/**
+ *_sqrt_recursion - fonda the square root of an int
+ *@n: number argument
+ *Return: returns squareroot
+ */
 int _sqrt_recursion(int n)
 {
 	int num = n, oddnum = 1, sqrt = 0;
