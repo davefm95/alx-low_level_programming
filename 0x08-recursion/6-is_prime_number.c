@@ -1,6 +1,6 @@
 /**
  *isprno - subfunction to check for a prime number
- *@div: divisor
+ *@d: divisor
  *@no: number to be checked
  *Return: 1 or 0
  */
