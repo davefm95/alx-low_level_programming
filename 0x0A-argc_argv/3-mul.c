@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int lenno, expnum, i, convnum, num1 = 0, num2 = 0;
+	int lenno, expnum, sign, i, convnum, num1 = 0, num2 = 0;
 
 	if (argc != 3)
 	{
@@ -18,10 +18,17 @@ int main(int argc, char *argv[])
 	argv++;
 	for (i = 1; i < argc; i++, argv++)
 	{
+		sign = 1;
 		lenno = 0;
 		expnum = 1;
 		while (**argv)
 		{
+			if (**argv == '-')
+			{
+				*argv += 1;
+				sign = -1;
+				continue;
+			}
 			lenno++;
 			expnum *= 10;
 			*argv += 1;
@@ -32,9 +39,9 @@ int main(int argc, char *argv[])
 		{
 			convnum = (**argv - '0') * expnum;
 			if (i == 1)
-				num1 += convnum;
+				num1 += convnum * sign;
 			else
-				num2 += convnum;
+				num2 += convnum * sign;
 		}
 	}
 	printf("%d\n", num1 * num2);
