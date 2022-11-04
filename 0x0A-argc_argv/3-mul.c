@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 			expnum *= 10;
 			*argv += 1;
 		}
-		expnum /=10;
+		expnum /= 10;
 		*argv = *argv - lenno;
 		for (; **argv; *argv += 1, expnum /=  10)
 		{
