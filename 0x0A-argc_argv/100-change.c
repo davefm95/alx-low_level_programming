@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	num = atoi(*(argv + 1));
 	if (num < 0)
 	{
-		nofcoins = 0;;
+		nofcoins = 0;
 	}
 	else
 	{
