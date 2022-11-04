@@ -1,13 +1,14 @@
+#include "main.h"
 #include <stdio.h>
 /**
- *main - prints iut the name of the file
+ *main - pribts number of arguments to it
  *@argc: number of arguments
  *@argv: pointer to array of arguments
- *Return: 0
+ *Return: 0;
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
-	printf("%s\n", *argv);
+	(void)argv;
+	printf("%d\n", argc - 1);
 	return (0);
 }
