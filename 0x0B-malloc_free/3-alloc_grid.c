@@ -1,35 +1,40 @@
-#include <stdlib.h>
+#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
- *alloc_grid - returns pointer to 2 dimensional array of integers
- *@width: length of internal array
- *@height: length of container array
- *Return: returns pointer to 2 dimensional array
+ * **alloc_grid - function to allocate memory to grid
+ * @width: int type
+ * @height: int type
+ * Return: grid of 0s
  */
 int **alloc_grid(int width, int height)
 {
-	int **tdarr;
 	int i, j;
+	int **td;
 
 	if (width <= 0 || height <= 0)
-		return (NULL);
-	tdarr = malloc(height * sizeof(int *));
-	if (tdarr == NULL)
 	{
-		free(tdarr);
+		return  (NULL);
+	}
+	td = malloc(height * sizeof(int *));
+	if (td == NULL)
+	{
 		return (NULL);
 	}
-	tdarr[0] = malloc(height * width * sizeof(int));
-	if (tdarr[0] == NULL)
-	{
-		free(tdarr[0]);
-		free(tdarr);
-		return (NULL);
-	}
-	for (i = 1; i < height; i++)
-		tdarr[i] = tdarr[0] + i * width;
 	for (i = 0; i < height; i++)
-		for (j = 0; j < height; j++)
-			*(tdarr[i] + j) = 0;
-	return (tdarr);
+	{
+		td[i] = malloc(width * sizeof(int));
+		if (td[i] == NULL)
+		{
+			for (j = 0; j < i;  j++)
+				free(td[j]);
+			free(td);
+			return (NULL);
+		}
+		for (j = 0; j < width; j++)
+		{
+			td[i][j] = 0;
+		}
+	}
+	return (td);
 }
