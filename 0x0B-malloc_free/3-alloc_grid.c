@@ -13,16 +13,13 @@ int **alloc_grid(int width, int height)
 
 	if (tdarr == NULL)
 		return (NULL);
+	tdarr[0] = malloc (height * width * sizeof(int));
+	if (tdarr[0] == NULL)
+		return (NULL);
+	for (i = 1; i < height; i++)
+		tdarr[i] = tdarr[0] + i * width;
 	for (i = 0; i < height; i++)
-	{
-		tdarr[i] = malloc(width * sizeof(int));
-		if (tdarr[i] == NULL)
-			return (NULL);
-		for (j = 0; j < width; j++)
-		{
-			tdarr[i][j] = 0;
-			printf("%d ",tdarr[i][j]);
-		}
-	}
+		for (j = 0; j < height; j++)
+			*(tdarr[i] + j) = 0;
 	return (tdarr);
 }
