@@ -8,16 +8,21 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **tdarr = malloc(height * sizeof(int *));
+	int **tdarr;
 	int i, j;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
+	tdarr = malloc(height * sizeof (int *));
 	if (tdarr == NULL)
 		return (NULL);
 	tdarr[0] = malloc(height * width * sizeof(int));
 	if (tdarr[0] == NULL)
+	{
+		free(tdarr[0]);
+		free(tdarr);
 		return (NULL);
+	}
 	for (i = 1; i < height; i++)
 		tdarr[i] = tdarr[0] + i * width;
 	for (i = 0; i < height; i++)
