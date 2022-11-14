@@ -24,13 +24,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	oncp = malloc(onl + 1);
 	if (oncp == NULL)
+	{
+		free(ncp);
 		return (NULL);
+	}
 	for (i = 0; i <= nl; i++)
 		ncp[i] = name[i];
 	for (i = 0; i <= onl; i++)
 		oncp[i] = owner[i];
 	nudog = malloc(sizeof(dog_t));
 	if (nudog == NULL)
+	{
+		free(ncp);
+		free(oncp);
 		return (NULL);
 	nudog->name = ncp;
 	nudog->age = age;
