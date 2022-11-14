@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 /**
  *argstostr - voncatenates argumemts to program
@@ -35,6 +36,7 @@ char *argstostr(int ac, char **av)
 			if (av[j][k] == '\0')
 			{
 				st[i] = '\n';
+				i++;
 				break;
 			}
 			st[i] = av[j][k];
