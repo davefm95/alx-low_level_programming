@@ -12,8 +12,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *nudog;
 	int i, nl = 0, onl = 0;
 	char *ncp, *oncp;
-	float *a;
 
+	if (name == NULL || owner == NULL)
+		return (NULL)
 	while (name[nl])
 		nl++;
 	while (owner[onl])
@@ -28,15 +29,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		ncp[i] = name[i];
 	for (i = 0; i <= onl; i++)
 		oncp[i] = owner[i];
-	a = malloc(sizeof(float));
-	if (a == NULL)
-		return (NULL);
-	*a = age;
 	nudog = malloc(sizeof(dog_t));
 	if (nudog == NULL)
 		return (NULL);
 	nudog->name = ncp;
-	nudog->age = *a;
+	nudog->age = age;
 	nudog->owner = oncp;
 	return (nudog);
 }
