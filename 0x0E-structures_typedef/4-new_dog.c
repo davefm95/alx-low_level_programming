@@ -10,10 +10,22 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *nudog;
+	int i, nl = 0, onl = 0;
+	char *ncp, *oncp;
 
+	while (name[nl])
+		nl++;
+	while (owner[onl])
+		onl++;
+	ncp = malloc((nl + 1) * sizeof(char));
+	oncp = malloc(onl + 1);
+	for (i = 0; i <= nl; i++)
+		ncp[i] = name[i];
+	for (i = 0; i <= onl; i++)
+		oncp[i] = owner[i];
 	nudog = malloc(sizeof(dog_t));
-	nudog->name = name;
+	nudog->name = ncp;
 	nudog->age = age;
-	nudog->owner = owner;
+	nudog->owner = oncp;
 	return (nudog);
 }
