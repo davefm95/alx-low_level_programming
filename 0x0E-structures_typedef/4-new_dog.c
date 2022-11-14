@@ -38,6 +38,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(ncp);
 		free(oncp);
 		return (NULL);
+	}
 	nudog->name = ncp;
 	nudog->age = age;
 	nudog->owner = oncp;
