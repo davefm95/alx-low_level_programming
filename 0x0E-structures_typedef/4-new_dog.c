@@ -30,8 +30,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	nudog = malloc(sizeof(dog_t));
 	if (nudog == NULL)
 		return (NULL);
-	nudog->name = ncp;
+	nudog->name = name;
 	nudog->age = age;
-	nudog->owner = oncp;
+	nudog->owner = owner;
 	return (nudog);
 }
