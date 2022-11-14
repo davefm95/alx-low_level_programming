@@ -18,7 +18,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[onl])
 		onl++;
 	ncp = malloc((nl + 1) * sizeof(char));
+	if (ncp == NULL)
+		return (NULL);
 	oncp = malloc(onl + 1);
+	if (oncp == NULL)
+		return (NULL);
 	for (i = 0; i <= nl; i++)
 		ncp[i] = name[i];
 	for (i = 0; i <= onl; i++)
