@@ -14,7 +14,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *ncp, *oncp;
 
 	if (name == NULL || owner == NULL)
-		return (NULL)
+		return (NULL);
 	while (name[nl])
 		nl++;
 	while (owner[onl])
