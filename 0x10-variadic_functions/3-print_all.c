@@ -9,8 +9,9 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j;
 	va_list p;
-	char *s;
+	char *s, c;
 	char far[] = {'c', 'i', 's', 'f'};
+	float f;
 
 	va_start(p, format);
 	while (format[i])
@@ -19,19 +20,21 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 		case 'c' :
-			printf("%c", va_arg(p, char));
+			c = va_arg(p, int);
+			printf("%c", c);
 			break;
 		case 'i' :
 			printf("%d", va_arg(p, int));
 			break;
 		case 's' :
-			s = va_args(p, char *);
+			s = va_arg(p, char *);
 			if (s == NULL)
 				s = "(nil)";
 			printf("%s", s);
 			break;
 		case 'f' :
-			printf("%f", va_arg(p, float));
+			f = (float)va_arg(p,double);
+			printf("%f", f);
 		}
 		while (j < 4)
 		{
