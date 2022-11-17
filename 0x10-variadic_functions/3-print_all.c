@@ -10,7 +10,6 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	va_list p;
 	char *s;
-	float f;
 
 	va_start(p, format);
 	while (format && format[i])
