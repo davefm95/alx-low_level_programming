@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int result, num1, num2, i;
+	int result, num1, num2;
 	op_t opt;
 	int (*opr)(int, int);
 
