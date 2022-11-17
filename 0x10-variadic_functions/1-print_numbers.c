@@ -18,7 +18,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			if (separator)
 				printf("%s", separator);
-			printf(" ");
 		}
 	}
 	printf("\n");
