@@ -7,6 +7,8 @@ void free_listint2(listint_t **head)
 {
 	listint_t *tempnode;
 
+	if (head == NULL)
+		return;
 	if (*head == NULL)
 		return;
 	tempnode = (**head).next;
