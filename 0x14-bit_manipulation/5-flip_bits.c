@@ -6,10 +6,10 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int count = 0, xor;
+	unsigned int count = 0, xnum;
 
-	xor = n ^ m;
-	while (n > 0)
+	xnum = n ^ m;
+	while (xnum > 0)
 	{
 		count++;
 		n &= (n - 1);
