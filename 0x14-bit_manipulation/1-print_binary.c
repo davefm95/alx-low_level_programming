@@ -18,7 +18,8 @@ void print_binary(unsigned long int n)
 		printf("1");
 		return;
 	}
-	for (; b * 2 <= n; b *= 2);
+	for (; b * 2 <= n;)
+		b *= 2;
 	while (b > 0)
 	{
 		if (b <= n)
