@@ -1,6 +1,7 @@
 /**
  *get_bit - gets bit at spec index
  *@index: index of bit to be gotten
+ *@n: number
  *Return: the value of the bit or -1
  */
 int get_bit(unsigned long int n, unsigned int index)
