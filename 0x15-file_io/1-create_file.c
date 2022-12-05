@@ -20,9 +20,8 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 	if (text_content == NULL)
-		return(charswrit);
-	else
-		charswrit = write(fd, text_content, strlen(text_content));
+		return (charswrit);
+	charswrit = write(fd, text_content, strlen(text_content));
 	if (charswrit != (int)strlen(text_content))
 		return (-1);
 	close(fd);
