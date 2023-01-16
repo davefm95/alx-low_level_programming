@@ -20,4 +20,9 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 int _abs(int n);
 char *_strcpy(char *dest, char *src);
+int add(a, b);
+int sub(a, b);
+int mul(a, b);
+int div(a, b);
+int mod(a, b);
 #endif
