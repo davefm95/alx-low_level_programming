@@ -1,0 +1,1 @@
+This file contqins info about the 0x1C-makefiles project
